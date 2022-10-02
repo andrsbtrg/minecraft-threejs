@@ -1,5 +1,4 @@
 import { usePlane } from "@react-three/cannon"
-import { NearestFilter, RepeatWrapping } from "three"
 import { groundTexture } from "../images/textures"
 
 export const Ground = () => {
@@ -7,11 +6,6 @@ export const Ground = () => {
         rotation: [-Math.PI / 2,0,0], position: [0,0,0]
     }))
 
-    // Makes it so the image will not be blurred but pixelated
-    groundTexture.magFilter = NearestFilter;
-    // Without wrapS and wrapT the image will stretch by default
-    groundTexture.wrapS = RepeatWrapping;
-    groundTexture.wrapT = RepeatWrapping;
     // Repeat the image
     groundTexture.repeat.set(100, 100);
 

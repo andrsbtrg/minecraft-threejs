@@ -1,4 +1,5 @@
-import { TextureLoader } from 'three'
+import { NearestFilter, RepeatWrapping , TextureLoader } from "three"
+
 import {
     dirtImg,
     logImg,
@@ -13,6 +14,21 @@ const grassTexture = new TextureLoader().load(grassImg);
 const glassTexture = new TextureLoader().load(glassImg);
 const woodTexture = new TextureLoader().load(woodImg);
 const groundTexture = new TextureLoader().load(grassImg);
+
+dirtTexture.magFilter = NearestFilter;
+logTexture.magFilter = NearestFilter;
+grassTexture.magFilter = NearestFilter;
+glassTexture.magFilter = NearestFilter;
+woodTexture.magFilter = NearestFilter;
+
+// Makes it so the image will not be blurred but pixelated
+groundTexture.magFilter = NearestFilter;
+// Without wrapS and wrapT the image will stretch by default
+groundTexture.wrapS = RepeatWrapping;
+groundTexture.wrapT = RepeatWrapping;
+
+
+
 
 export {
     dirtTexture,

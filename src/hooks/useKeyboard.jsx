@@ -8,11 +8,11 @@ function actionByKey(key) {
         KeyA: 'moveLeft',
         KeyD: 'moveRight',
         Space: 'jump',
-        Digit1: 'grass',
-        Digit2: 'glass',
-        Digit3: 'dirt',
-        Digit4: 'wood',
-        Digit5: 'log',
+        Digit1: 'dirt',
+        Digit2: 'grass',
+        Digit3: 'glass',
+        Digit4: 'log',
+        Digit5: 'wood',
     }
     return keyActionMap[key];
 }

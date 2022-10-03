@@ -53,11 +53,11 @@ body {
 }
 
 .texture-selector {
-  transform: scale(5);
+  transform: scale(3);
 }
 
 .texture-selector img.active {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 .menu {

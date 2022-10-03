@@ -31,10 +31,10 @@ groundTexture.wrapT = RepeatWrapping;
 
 
 export {
-    dirtTexture,
-    logTexture,
     grassTexture,
     glassTexture,
+    dirtTexture,
+    logTexture,
     woodTexture,
     groundTexture,
 }
